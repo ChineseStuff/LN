@@ -9,7 +9,6 @@ export function RecipesProvider({ children }) {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async () => {
-    debugger;
     try {
       setIsLoading(true);
       const {
@@ -26,7 +25,6 @@ export function RecipesProvider({ children }) {
   };
 
   const value = useMemo(() => {
-    debugger;
     return {
       articles,
       tags,

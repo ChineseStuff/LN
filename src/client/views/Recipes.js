@@ -6,7 +6,6 @@ import { useRecipesContext } from '../context/recipes.context';
 const Recipes = props => {
   const { articles, tags, isLoading, fetchData } = useRecipesContext();
   useEffect(() => {
-    debugger;
     if ((articles.length === 0 || tags.length === 0) && !isLoading) fetchData();
   }, [articles, tags]);
 

@@ -13,7 +13,6 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, '..', '..', 'public')));
 
 app.use('/ssr', (req, res, next) => {
-  debugger;
   fs.readFile(
     path.resolve(__dirname, '../../public/index.html'),
     'utf-8',
